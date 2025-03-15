@@ -63,7 +63,7 @@ export const Home = ({isLogin, setIsLogin}) => {
                     </a>
                 ))}
                 <div className={`${isLogin ? 'flex ' : 'hidden'} items-center hover:bg-[#48e5] h-5 p-5 rounded-[10px]`} onClick={ViewProfile}>
-                    <img className="w-[34px] h-[34] rounded-full" src="default.jpeg" alt="user profile" />
+                    <img className="w-[34px] h-[34] rounded-full" src="default.avif" alt="user profile" />
                     <h3 className="text-[#fcfcfc] ml-1">{userName}</h3>
                 </div>
             </nav>  
