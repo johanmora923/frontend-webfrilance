@@ -51,7 +51,7 @@ export const Home = ({isLogin, setIsLogin}) => {
     <div className="relative bg-cover bg-center h-screen">
         <SBackground />
         <header className="absolute top-0 left-0 w-full flex justify-between items-center text-white px-8 py-4 backdrop-blur-md">
-            <h2 className="text-3xl font-black text-green-400">{'Webilance'}</h2>
+            <h2 className="text-3xl font-black text-green-400">{'Webfrilance'}</h2>
             <nav className="hidden md:flex gap-4">
                 {["Servicios", "Sobre mí", "Portafolio", "Contacto", "Modelos"].map((link, index) => (
                     <a
@@ -275,12 +275,12 @@ export const Home = ({isLogin, setIsLogin}) => {
                 <div>
                     <h3 className="text-xl font-bold mb-4">About</h3>
                     <p className="text-sm">
-                    En Webilance, transformamos ideas en experiencias digitales. Nos especializamos en diseño web creativo, desarrollo a medida, SEO y soporte continuo.
+                    En Webfrilance, transformamos ideas en experiencias digitales. Nos especializamos en diseño web creativo, desarrollo a medida, SEO y soporte continuo.
                     </p>
                 </div>
                 <div>
                     <h3 className="text-xl font-bold mb-4">Contacto</h3>
-                    <p className="text-sm">Webilance@gmail.com</p>
+                    <p className="text-sm">Webfrilance@gmail.com</p>
                     <p className="text-sm">+58 424-207-9712</p>
                 </div>
                 <div>
