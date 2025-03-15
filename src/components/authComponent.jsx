@@ -27,10 +27,11 @@ const AuthComponent = ({ isLogin, setIsLogin }) => {
 
             if (res.ok) {
                 setMessage(isRegistering ? "Registro exitoso" : "Inicio de sesión exitoso");
-                setIsLogin(true);
                 if (isRegistering) setIsRegistering(false);
                 if (!isRegistering) {
                     window.scrollTo(0, 0);
+                    window.localStorage.setItem('user', formData.name)
+                    setIsLogin(true);
                 }
             } else {
                 setMessage(`Error: ${data.message || "Algo salió mal."}`);
