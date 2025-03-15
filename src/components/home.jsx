@@ -48,27 +48,27 @@ export const Home = ({isLogin, setIsLogin}) => {
 
     return (
     <div>
-      {/* Hero Section */}
-        <div className="relative bg-cover bg-center h-screen">
+    /* Hero Section */
+    <div className="relative bg-cover bg-center h-screen">
         <SBackground />
         <header className="absolute top-0 left-0 w-full flex justify-between items-center text-white px-8 py-4 backdrop-blur-md">
             <h2 className="text-3xl font-black text-green-400">{'Webilance'}</h2>
-        <nav className="hidden md:flex gap-4">
-            {["Servicios", "Sobre mí", "Portafolio", "Contacto", "Modelos"].map((link, index) => (
-                <a
-                    key={index}
-                    href={link}
-                    className="text-lg hover:text-green-400"
-                >
-                    {link}
-                </a>
-            ))}
-            <div className={`${isLogin ? 'flex ' : 'hidden'} items-center hover:bg-[#48e5] h-5 p-5 rounded-[10px]`} onClick={ViewProfile}>
-                <img className="w-[34px] h-[34] rounded-full" src=".../default.jpeg" alt="user profile" />
-                <h3 className="text-[#fcfcfc] ml-1">{userName}</h3>
-            </div>
-        </nav>  
-        {/* Hamburger Menu for Mobile */}
+            <nav className="hidden md:flex gap-4">
+                {["Servicios", "Sobre mí", "Portafolio", "Contacto", "Modelos"].map((link, index) => (
+                    <a
+                        key={index}
+                        href={link}
+                        className="text-lg hover:text-green-400"
+                    >
+                        {link}
+                    </a>
+                ))}
+                <div className={`${isLogin ? 'flex ' : 'hidden'} items-center hover:bg-[#48e5] h-5 p-5 rounded-[10px]`} onClick={ViewProfile}>
+                    <img className="w-[34px] h-[34] rounded-full" src="default.jpeg" alt="user profile" />
+                    <h3 className="text-[#fcfcfc] ml-1">{userName}</h3>
+                </div>
+            </nav>  
+            {/* Hamburger Menu for Mobile */}
             <div className="md:hidden">
             <button
                 onClick={() => setMenuOpen(!menuOpen)}
