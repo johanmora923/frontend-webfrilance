@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home isLogin={isLogin} setIsLogin={setIsLogin} />} />
           <Route path="/Contacto" element={<Contact />} />
-          <Route path='Modelos' element={<Modelos />} />
+          <Route path='/Modelos' element={<Modelos />} />
         </Routes>
       </div>
     </Router>
