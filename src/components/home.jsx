@@ -48,7 +48,6 @@ export const Home = ({isLogin, setIsLogin}) => {
 
     return (
     <div>
-    /* Hero Section */
     <div className="relative bg-cover bg-center h-screen">
         <SBackground />
         <header className="absolute top-0 left-0 w-full flex justify-between items-center text-white px-8 py-4 backdrop-blur-md">
