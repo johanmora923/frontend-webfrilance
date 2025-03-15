@@ -8,7 +8,7 @@ const CommentsList = () => {
     useEffect(() => {
         const fetchComments = async () => {
             try {
-                const response = await fetch("http://localhost:3000/comments"); // Ajusta la URL según tu backend
+                const response = await fetch("https://backend-webilance.onrender.com/comments"); // Ajusta la URL según tu backend
                 if (!response.ok) {
                     throw new Error("Error al obtener los comentarios");
                 }

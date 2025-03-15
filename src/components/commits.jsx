@@ -10,7 +10,7 @@ const FeedbackComponent = () => {
 
     const handleSubmit = async () => {
         try {
-            const response = await fetch('http://localhost:3000/comments', {
+            const response = await fetch('https://backend-webilance.onrender.com/comments', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

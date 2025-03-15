@@ -14,7 +14,7 @@ const AuthComponent = ({ isLogin, setIsLogin }) => {
         console.log(formData);
 
         try {
-            const res = await fetch(`http://localhost:3000/${isRegistering ? "register" : "login"}`, {
+            const res = await fetch(`https://backend-webilance.onrender.com/${isRegistering ? "register" : "login"}`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -44,7 +44,7 @@ const AuthComponent = ({ isLogin, setIsLogin }) => {
 
     const checkSession = async () => {
         try {
-            const res = await fetch("http://localhost:3000/session", {
+            const res = await fetch("https://backend-webilance.onrender.com/session", {
                 credentials: "include", // Incluye las cookies en la solicitud
             });
 
@@ -60,7 +60,7 @@ const AuthComponent = ({ isLogin, setIsLogin }) => {
 
     const handleLogout = async () => {
         try {
-            const res = await fetch("http://localhost:3000/logout", {
+            const res = await fetch("https://backend-webilance.onrender.com/logout", {
                 method: "POST",
                 credentials: "include", // Incluye las cookies
             });
