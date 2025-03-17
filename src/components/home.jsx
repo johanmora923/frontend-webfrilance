@@ -52,7 +52,7 @@ export const Home = ({isLogin, setIsLogin}) => {
         <CookieNotice/>
     <div className="relative bg-cover bg-center h-screen">
         <SBackground />
-        <header className="absolute top-0 left-0 w-full flex justify-between items-center text-white py-4 px-2  backdrop-blur-md">
+        <header className="absolute top-0 left-0 w-full flex justify-between items-center text-white py-4 px-2 md:px-8  backdrop-blur-md">
             <h2 className="text-3xl font-black text-green-400">{'Webfrilance'}</h2>
             <nav className="hidden md:flex gap-4">
                 {["Servicios", "Portafolio", "Contacto", "Modelos"].map((link, index) => (

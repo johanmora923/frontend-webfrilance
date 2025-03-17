@@ -23,7 +23,7 @@ const SBackground = () => {
       const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
       gradient.addColorStop(0, '#4F46E5'); // Azul vibrante
       gradient.addColorStop(0.4, '#9333EA'); // Morado
-      gradient.addColorStop(0.9, '#fcfcfc'); // Blanco más pronunciado
+      gradient.addColorStop(0.9, '#fdfdfd'); // Blanco más pronunciado
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
