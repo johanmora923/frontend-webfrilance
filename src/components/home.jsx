@@ -58,7 +58,7 @@ export const Home = ({isLogin, setIsLogin}) => {
                 {["Servicios", "Portafolio", "Contacto", "Modelos"].map((link, index) => (
                     <a
                         key={index}
-                        href={link === 'Servicios' ? '#offers' : link || link === 'portafolio' ? 'https://portafolio-six-sage.vercel.app' : link}
+                        href={link === 'Servicios' ? '#offers' : link}
                         className="text-lg hover:text-green-400"
                     >
                         {link}
