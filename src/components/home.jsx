@@ -85,7 +85,7 @@ export const Home = ({isLogin, setIsLogin}) => {
                 {["Servicios", "Sobre mí", "Portafolio", "Contacto", "Modelos"].map((link, index) => (
                 <a
                     key={index}
-                    href={`#${link.toLowerCase()}`}
+                    href={link === 'Servicios' ? '#offers' : link}
                     className="block text-lg text-white p-2 hover:bg-green-500 rounded transition-all"
                 >
                     {link}
