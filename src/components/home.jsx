@@ -12,6 +12,7 @@ import { Profile } from "./profile.jsx";
 import CommentsList from "./CommentsList.jsx";
 import { FcCopyright } from "react-icons/fc";
 import { FaLaptop, FaBlog, FaRedoAlt, FaBrush, FaLink, FaDatabase, FaShieldAlt } from "react-icons/fa";
+import CookieNotice from "./CookieNoticee.jsx";
 
 export const Home = ({isLogin, setIsLogin}) => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -48,6 +49,7 @@ export const Home = ({isLogin, setIsLogin}) => {
 
     return (
     <div>
+        <CookieNotice/>
     <div className="relative bg-cover bg-center h-screen">
         <SBackground />
         <header className="absolute top-0 left-0 w-full flex justify-between items-center text-white px-8 py-4 backdrop-blur-md">
@@ -100,8 +102,7 @@ export const Home = ({isLogin, setIsLogin}) => {
             ¿AÚN SIN WEB?
             </h1>
             <p className="text-2xl text-center mt-6">
-            Desarrollo de páginas y aplicaciones web para restaurantes,<br />
-            cafeterías y pequeños establecimientos comerciales.
+            Servicios web a medida: diseño, desarrollo, mantenimiento y optimización <br></br>para todo tipo de proyectos.
             </p>
             <button onClick={ToContact}
             className="mt-8 px-6 py-3 bg-green-500 rounded-lg text-xl font-semibold shadow-lg hover:bg-green-400 transition-all">
@@ -287,7 +288,7 @@ export const Home = ({isLogin, setIsLogin}) => {
                     <a href="terminos.html" className="text-sm hover:text-green-400 transition-all">
                     Términos y condiciones
                     </a>
-                    <p className="text-sm mt-4 flex justify-between "> <FcCopyright className="text-[3em] mr-2 " /> 2024 JohanMora. Todos los derechos reservados.</p>
+                    <p className="text-sm mt-4 flex items-center "> <FcCopyright className="text-[3em] mr-2" /> copyright(2024 JohanMora. Todos los derechos reservados.)</p>
                 </div>
             </div>
         </footer>
