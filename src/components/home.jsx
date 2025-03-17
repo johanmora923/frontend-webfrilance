@@ -52,17 +52,18 @@ export const Home = ({isLogin, setIsLogin}) => {
         <CookieNotice/>
     <div className="relative bg-cover bg-center h-screen">
         <SBackground />
-        <header className="absolute top-0 left-0 w-full flex justify-between items-center text-white px-8 py-4 backdrop-blur-md">
+        <header className="absolute top-0 left-0 w-full flex justify-between items-center text-white py-4 px-2  backdrop-blur-md">
             <h2 className="text-3xl font-black text-green-400">{'Webfrilance'}</h2>
             <nav className="hidden md:flex gap-4">
-                {["Servicios", "Sobre mí", "Portafolio", "Contacto", "Modelos"].map((link, index) => (
+                {["Servicios", "Portafolio", "Contacto", "Modelos"].map((link, index) => (
                     <a
                         key={index}
-                        href={link}
+                        href={link === 'Servicios' ? '#offers' : link || link === 'portafolio' ? 'https://portafolio-six-sage.vercel.app' : link}
                         className="text-lg hover:text-green-400"
                     >
                         {link}
                     </a>
+                    
                 ))}
                 <div className={`${isLogin ? 'flex ' : 'hidden'} items-center hover:bg-[#48e5] h-5 p-5 rounded-[10px]`} onClick={ViewProfile}>
                     <img className="w-[34px] h-[34] rounded-full" src="default.avif" alt="user profile" />
@@ -192,7 +193,7 @@ export const Home = ({isLogin, setIsLogin}) => {
                     <OfferCard
                         Icon={<CgWebsite className="text-blue-500 text-[3em] lg:text-[5em] md:text-[4em] m-auto hover:scale-110 transition-transform" />}
                         title="Web sencilla"
-                        startingPrice="Desde $70"
+                        startingPrice="Desde $40"
                         maintenanceFee="Mantenimiento $15"
                         description="Elige la plantilla que más te guste, pásame las fotos y los textos que quieras incluir en tu web y en 10 días la tendrás online."
                         buttonText="¡QUIERO UNA!"
@@ -288,7 +289,7 @@ export const Home = ({isLogin, setIsLogin}) => {
                     <a href="terminos.html" className="text-sm hover:text-green-400 transition-all">
                     Términos y condiciones
                     </a>
-                    <p className="text-sm mt-4 flex items-center "> <FcCopyright className="text-[3em] mr-2" /> copyright(2024 JohanMora. Todos los derechos reservados.)</p>
+                    <p className="text-sm mt-4 flex items-center "> <FcCopyright className="text-[3em] mr-2" />Copyright(2024.JohanMora.Todos los derechos reservados.)</p>
                 </div>
             </div>
         </footer>
