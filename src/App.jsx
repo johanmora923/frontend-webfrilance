@@ -7,7 +7,6 @@ import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import { ExternalRedirect } from './components/ExternalRedirect.jsx';
 import  WhatsAppButton  from './components/whatsappButtom.jsx';
-import { CookiesPopup } from './components/cookie.jsx';
 
 function App() {
   const [isLogin, setIsLogin] = useState(false)
@@ -16,7 +15,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <CookiesPopup />
         <Routes>
           <Route exact path="/" element={<Home isLogin={isLogin} setIsLogin={setIsLogin} />} />
           <Route path="/Contacto" element={<Contact />} />

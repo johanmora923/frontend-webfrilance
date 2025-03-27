@@ -12,7 +12,7 @@ import { Profile } from "./profile.jsx";
 import CommentsList from "./CommentsList.jsx";
 import { FcCopyright } from "react-icons/fc";
 import { FaLaptop, FaBlog, FaRedoAlt, FaBrush, FaLink, FaDatabase, FaShieldAlt } from "react-icons/fa";
-import CookieNotice from "./CookieNoticee.jsx";
+import CookiesPopup from "./cookie.jsx";
 
 export const Home = ({isLogin, setIsLogin}) => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -49,7 +49,7 @@ export const Home = ({isLogin, setIsLogin}) => {
 
     return (
     <div>
-        <CookieNotice/>
+        <CookiesPopup />
     <div className="relative bg-cover bg-center h-screen">
         <ParticleCanvas />
         <header className="absolute top-0 left-0 w-full flex justify-between items-center text-white py-4 px-2 md:px-8  backdrop-blur-md">
