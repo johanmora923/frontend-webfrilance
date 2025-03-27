@@ -7,7 +7,7 @@ export const OfferCard = ({ Icon, title, startingPrice, maintenanceFee, descript
     
         return (
             <div className="ofert__container bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between h-full">
-                <div>
+                <div className='flex flex-col'>
                     <div className="icon-container flex justify-center mb-4">
                         {Icon}
                     </div>
@@ -29,6 +29,7 @@ export const OfferCard = ({ Icon, title, startingPrice, maintenanceFee, descript
                 >
                     {buttonText}
                 </button>
+                <span className='text-red-500 m-auto text-[0.8rem] mb-5 mt-5'>No incluye servicios de Hosting, ni dominio personalizado</span>
             </div>
         );
 };

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ServiceCard from "./ServiceCard.jsx";
 import OfferCard from "./offerCard.jsx";
-import SBackground from "./bg.jsx";
+import ParticleCanvas from "./bg.jsx";
 import { CgWebsite } from "react-icons/cg";
 import { FaLaptopCode } from "react-icons/fa";
 import { AiTwotoneShop } from "react-icons/ai";
@@ -51,7 +51,7 @@ export const Home = ({isLogin, setIsLogin}) => {
     <div>
         <CookieNotice/>
     <div className="relative bg-cover bg-center h-screen">
-        <SBackground />
+        <ParticleCanvas />
         <header className="absolute top-0 left-0 w-full flex justify-between items-center text-white py-4 px-2 md:px-8  backdrop-blur-md">
             <h2 className="text-3xl font-black text-green-400">{'Webfrilance'}</h2>
             <nav className="hidden md:flex gap-4">
@@ -95,11 +95,11 @@ export const Home = ({isLogin, setIsLogin}) => {
             )}
         </header>
         
-        <section className=" flex flex-col justify-center items-center h-full text-white px-8">
+        <section className="flex flex-col justify-center items-center h-full text-white px-8">
             {viewProfile &&
                 <Profile handleLogout={handleLogout} /> 
             }
-            <h1 className="text-5xl font-extrabold text-center">
+            <h1 className="text-2xl md:text-5xl   font-extrabold text-center">
             ¿AÚN SIN WEB?
             </h1>
             <p className="text-2xl text-center mt-6">
