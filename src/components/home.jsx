@@ -99,7 +99,7 @@ export const Home = ({isLogin, setIsLogin}) => {
             {viewProfile &&
                 <Profile handleLogout={handleLogout} /> 
             }
-            <h1 className="text-2xl md:text-5xl   font-extrabold text-center">
+            <h1 className="text-4xl md:text-6xl   font-extrabold text-center">
             ¿AÚN SIN WEB?
             </h1>
             <p className="text-2xl text-center mt-6">
