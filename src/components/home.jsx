@@ -81,17 +81,18 @@ export const Home = ({isLogin, setIsLogin}) => {
             </div>
           {/* Mobile Menu */}
             {menuOpen && (
-            <div className="absolute top-16 left-0 bg-gray-800 w-full p-4 text-center md:hidden">
-                {["Servicios", "Sobre mí", "Portafolio", "Contacto", "Modelos"].map((link, index) => (
+            <div className="absolute top-16 left-0 bg-gradient-to-r from-gray-800 to-gray-700  w-full p-6 shadow-md rounded-md text-center md:hidden">
+            {["Servicios", "Sobre mí", "Portafolio", "Contacto", "Modelos"].map((link, index) => (
                 <a
                     key={index}
                     href={link === 'Servicios' ? '#offers' : link}
-                    className="block text-lg text-white p-2 hover:bg-green-500 rounded transition-all"
+                    className="block text-lg text-white p-3 my-2 bg-gray-900 rounded-lg shadow-sm hover:bg-green-500 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-green-300 transition-all"
                 >
                     {link}
                 </a>
                 ))}
             </div>
+            
             )}
         </header>
         
