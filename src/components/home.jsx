@@ -81,7 +81,7 @@ export const Home = ({isLogin, setIsLogin}) => {
             </div>
           {/* Mobile Menu */}
             {menuOpen && (
-            <div className="absolute top-16 left-0 bg-gradient-to-r from-gray-800 to-gray-700  w-full p-6 shadow-md rounded-md text-center md:hidden">
+            <div className="absolute top-16 left-0 bg-transparent w-full p-6  rounded-md text-center md:hidden">
             {["Servicios", "Sobre mí", "Portafolio", "Contacto", "Modelos"].map((link, index) => (
                 <a
                     key={index}
